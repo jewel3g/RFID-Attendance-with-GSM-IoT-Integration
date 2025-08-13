@@ -24,3 +24,26 @@ Create a Firebase Realtime Database
 Get your database URL, e.g., yourproject.firebaseio.com
 
 Set rules temporarily to allow write without authentication (for testing):
+
+
+The RFID scan checks if the card matches known UIDs.
+
+Attendance count is stored in EEPROM and displayed on LCD.
+
+After storing locally, the count is sent to Firebase via GPRS (GSM).
+
+GSM is controlled with AT commands using SoftwareSerial.
+
+The JSON sent is like: {"Boby":5}, so each user's count updates the Firebase DB.
+
+You can view attendance data live on Firebase console or via your app.
+
+Final notes
+Make sure your GSM module’s serial pins don’t conflict with LCD pins (change pins if needed).
+
+Test GSM commands manually first on serial monitor to confirm your module connects to GPRS.
+
+Adjust delays and add robust error checking as needed.
+
+Secure your Firebase with auth tokens before production.
+

@@ -17,6 +17,49 @@ Buttons connected on analog pins A0..A3 (as in your original code)
 
 LED on pin 8
 
+Library 
+1. LiquidCrystal
+Official Arduino library for controlling LCDs.
+
+GitHub (Arduino official repo):
+https://github.com/arduino-libraries/LiquidCrystal
+
+2. EEPROM
+Arduino core library to read/write EEPROM memory.
+
+GitHub (Arduino core repo):
+https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/EEPROM
+
+3. SPI
+Standard Arduino SPI communication library.
+
+GitHub (Arduino core repo):
+https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/SPI
+
+4. MFRC522
+RFID module library for MFRC522 reader.
+
+Popular GitHub repo:
+https://github.com/miguelbalboa/rfid
+
+5. Wire
+Arduino I2C library for communication with I2C devices (like RTC).
+
+GitHub (Arduino core repo):
+https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/Wire
+
+6. TimeLib
+Library to handle time and date easily.
+
+GitHub repo:
+https://github.com/PaulStoffregen/Time
+
+7. DS1307RTC
+Library to interface with DS1307 RTC chip.
+
+Often used as part of the Time library family, also found here:
+https://github.com/PaulStoffregen/DS1307RTC
+
 Firebase:
 
 Create a Firebase Realtime Database
